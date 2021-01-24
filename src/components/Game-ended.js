@@ -7,7 +7,7 @@ function GameEnded() {
                 {/* Get liar (API call) */}
                 ahaha was the liar!
             </div>
-            <button class='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>play again</button>
+            <button className='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>play again</button>
         </div>
     );
 }

@@ -5,7 +5,7 @@ function WaitingRoom() {
         <div>
             <p className='linkLabel'>send your friends this link:</p>
             <p className='link'>liar-game.io/etc</p>
-            <button class='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>start</button>
+            <button className='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>start</button>
         </div>
     );
 }

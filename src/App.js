@@ -7,15 +7,7 @@ import './components/Components.css'
 
 function App() {
   return (
-    <div>
-      <head>
-        <meta charset='utf-8' />
-        <meta name='viewport' content='width=device-width' />
-        <title>liar game</title>
-        <link rel='stylesheet' href='https://unpkg.com/blocks.css/dist/blocks.min.css' />
-      </head>
-      <Acknowledgements />
-    </div>
+    <Home />
   );
 }
 

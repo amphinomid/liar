@@ -6,6 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <head>
+      <meta charSet='utf-8' />
+      <meta name='viewport' content='width=device-width' />
+      <title>who's the liar? 👀</title>
+      <link rel='stylesheet' href='https://unpkg.com/blocks.css/dist/blocks.min.css' />
+    </head>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

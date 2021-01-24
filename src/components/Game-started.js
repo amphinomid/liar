@@ -8,7 +8,7 @@ function GameStarted() {
                 category is FOOD<br />
                 word is APPLE / you are the LIAR
             </div>
-            <button class='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>end</button>
+            <button className='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>end</button>
         </div>
     );
 }
