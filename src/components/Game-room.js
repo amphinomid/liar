@@ -18,7 +18,7 @@ function GameRoom() {
                 </div>
             </div>
             <div className='gameScreenRight'>
-                <GameEnded />
+                <WaitingRoom />
             </div>
         </div>
     );
