@@ -14,7 +14,7 @@ function App() {
         <title>liar game</title>
         <link rel='stylesheet' href='https://unpkg.com/blocks.css/dist/blocks.min.css' />
       </head>
-      <Acknowledgements />
+      <GameRoom />
     </div>
   );
 }
