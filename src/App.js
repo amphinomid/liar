@@ -1,3 +1,6 @@
+import React, { Component } from 'react'
+import { HashRouter, Route } from 'react-router-dom'
+
 import Home from './components/Home'
 import Instructions from './components/Instructions'
 import Acknowledgements from './components/Acknowledgements'
