@@ -8,7 +8,6 @@ function GameStarted() {
                 category is FOOD<br />
                 word is APPLE / you are the LIAR
             </div>
-            {/* If host */}
             <button class='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>end</button>
         </div>
     );

@@ -7,7 +7,6 @@ function GameEnded() {
                 {/* Get liar (API call) */}
                 ahaha was the liar!
             </div>
-            {/* If host */}
             <button class='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>play again</button>
         </div>
     );
