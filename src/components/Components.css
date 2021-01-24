@@ -1,0 +1,65 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usernameLabel {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px auto 5px auto;
+}
+
+.usernameInput {
+    border: 3px solid #000;
+    border-radius: 5px;
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 5px auto 5px auto;
+}
+
+.gameScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gameScreenLeft {
+    width: 20vw;
+    border-right: 3px dashed #000;
+}
+
+.playersLabel {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.playersList {
+    border: 3px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 2rem;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.gameScreenRight {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linkLabel, .promptLabel, .liarLabel {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
