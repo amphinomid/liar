@@ -9,7 +9,7 @@ function GameStarted() {
                 word is APPLE / you are the LIAR
             </div>
             {/* If host */}
-            <button class='block' style={{ marginTop: `20px`, marginLeft: `auto`, marginRight: `auto` }}>end</button>
+            <button class='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>end</button>
         </div>
     );
 }

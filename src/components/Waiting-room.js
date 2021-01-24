@@ -7,7 +7,7 @@ function WaitingRoom() {
                 send your friends this link: ———
             </div>
             {/* If host */}
-            <button class='block' style={{ marginTop: `20px`, marginLeft: `auto`, marginRight: `auto` }}>start</button>
+            <button class='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>start</button>
         </div>
     );
 }

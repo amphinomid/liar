@@ -8,7 +8,7 @@ function GameEnded() {
                 ahaha was the liar!
             </div>
             {/* If host */}
-            <button class='block' style={{ marginTop: `20px`, marginLeft: `auto`, marginRight: `auto` }}>play again</button>
+            <button class='block' style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>play again</button>
         </div>
     );
 }

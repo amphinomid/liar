@@ -10,6 +10,14 @@ button {
     sans-serif;
 }
 
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
+}
+
 body {
   background-color: #e85a5a;
   margin: 0;
