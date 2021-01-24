@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Instructions() {
     return (
@@ -9,7 +10,7 @@ function Instructions() {
                 the specific rules are up to you and your friends (e.g. # of rounds), but a common way to play involves taking turns describing the word, during which non-liars try to
                 provide info to prove their innocence without revealing enough for the liar to guess the word, while the liar tries to fit in. at the end, everyone votes on who they think the liar is.
             </p>
-            <button className='block' style={{ marginTop: '30px', marginLeft: 'auto', marginRight: 'auto' }}>back</button>
+            <Link to='/' style={{ textDecoration: 'none' }}><button className='block' style={{ marginTop: '30px', marginLeft: 'auto', marginRight: 'auto' }}>back</button></Link>
         </div>
     );
 }
