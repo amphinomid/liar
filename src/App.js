@@ -1,4 +1,6 @@
 import Home from './components/Home'
+import Instructions from './components/Instructions'
+import Acknowledgements from './components/Acknowledgements'
 import EnterUsername from './components/Enter-username'
 import GameRoom from './components/Game-room'
 import './components/Components.css'
@@ -12,7 +14,7 @@ function App() {
         <title>liar game</title>
         <link rel='stylesheet' href='https://unpkg.com/blocks.css/dist/blocks.min.css' />
       </head>
-      <GameRoom />
+      <Acknowledgements />
     </div>
   );
 }

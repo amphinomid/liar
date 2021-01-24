@@ -6,6 +6,18 @@
     justify-content: center;
 }
 
+.topLinks {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.howToPlayLink:hover, .acknowledgementsLink:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
 .usernameLabel {
     font-size: 3rem;
     font-weight: bold;
