@@ -6,7 +6,7 @@ function Home() {
             <div className='topLinks'>
                 <p className='howToPlayLink' style={{ marginLeft: '15px' }}><u>how to play</u></p>
                 <p style={{ textAlign: 'right', marginLeft: 'auto', marginRight: '10px' }}>
-                    <a href='https://github.com/fibanneacci/liar' target='blank' rel='noreferrer'>built</a> by <a href='https://twitter.com/fibanneacci' target='_blank' rel='noreferrer'>@fibanneacci</a>.{' '}
+                    <a href='https://github.com/fibanneacci/liar' target='blank' rel='noreferrer'>built</a> by <a href='https://anli.io' target='_blank' rel='noreferrer'>anne</a>.{' '}
                     <p className='acknowledgementsLink'><u>acknowledgements!</u></p>
                 </p>
             </div>
