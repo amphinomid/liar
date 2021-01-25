@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// https://css-tricks.com/intro-firebase-react/, https://www.developintelligence.com/blog/2017/04/building-a-realtime-chess-game-with-react-and-firebase/
+
 function Acknowledgements() {
     return (
         <div>
