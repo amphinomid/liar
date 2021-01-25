@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Home from './components/Home'
 import Instructions from './components/Instructions'
@@ -10,7 +10,7 @@ import './components/Components.css'
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" render={ props => <Home {...props} />} />
         <Route exact path="/instructions" render={ props => <Instructions {...props} />} />
@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/enter-username" render={ props => <EnterUsername {...props} />} />
         <Route exact path="/room" render={ props => <Room {...props} />} />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
