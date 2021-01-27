@@ -7,9 +7,9 @@ function EnterUsername() {
     const hist = useHistory()
     function Submit() {
         const url = window.location.pathname
+        const games = firebase.database().ref('games')
         // If URL doesn't have id, create room
         if (url.length == 6) {
-            const games = firebase.database().ref('games')
             const id = rand.generate(7)
             const player = {
                 liar: false,
@@ -22,15 +22,20 @@ function EnterUsername() {
                     player
                 ],
                 started: false,
-                url: 'enter/' + id,
                 word: ''
             }
-            games.push(game)
+            games.child(id).set(game)
             hist.replace('/room/' + id)
         }
         // If URL has id, join existing room
         else {
-            
+            const id = url.substring(6)
+            const player = {
+                liar: false,
+                name: document.getElementById('username').value
+            }
+            games.child(id).child('players').push(player)
+            hist.replace('/room' + id)
         }
     }
 
