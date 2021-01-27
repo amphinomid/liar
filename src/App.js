@@ -15,8 +15,9 @@ function App() {
         <Route exact path="/" render={ props => <Home {...props} />} />
         <Route exact path="/instructions" render={ props => <Instructions {...props} />} />
         <Route exact path="/acknowledgements" render={ props => <Acknowledgements {...props} />} />
-        <Route exact path="/enter-username" render={ props => <EnterUsername {...props} />} />
-        <Route exact path="/room" render={ props => <Room {...props} />} />
+        <Route exact path="/enter" render={ props => <EnterUsername {...props} />} />
+        <Route exact path="/enter/:id" render={ props => <EnterUsername {...props} />} />
+        <Route exact path="/room/:id" render={ props => <Room {...props} />} />
       </Switch>
     </BrowserRouter>
   );

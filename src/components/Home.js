@@ -14,7 +14,7 @@ function Home() {
             </div>
             <div className='container' style={{ height: '90vh' }}>
                 <h1 style={{ marginTop: '-20px' }}>who's the liar? 🤥</h1>
-                <Link to='/enter-username' style={{ textDecoration: 'none' }}><button className='block' style={{ marginTop: '-15px', marginLeft: 'auto', marginRight: 'auto' }}>create room</button></Link>
+                <Link to='/enter' style={{ textDecoration: 'none' }}><button className='block' style={{ marginTop: '-15px', marginLeft: 'auto', marginRight: 'auto' }}>create room</button></Link>
             </div>
         </div>
     );
