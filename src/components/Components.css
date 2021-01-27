@@ -47,7 +47,7 @@
 }
 
 .playersLabel {
-    font-size: 2.25rem;
+    font-size: 3.5vw;
     font-weight: bold;
     margin: 10px;
 }
@@ -70,7 +70,7 @@
 }
 
 .linkLabel, .link, .promptLabel, .liarLabel {
-    font-size: 3rem;
+    font-size: 5vw;
     font-weight: bold;
     text-align: center;
     margin: 0 auto 0 auto;
