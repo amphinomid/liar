@@ -8,6 +8,7 @@ function EnterUsername() {
     function Submit() {
         const url = window.location.pathname
         const games = firebase.database().ref('games')
+        const name = document.getElementById('username').value
         // If URL doesn't have id, create room
         if (url.length == 6) {
             const id = rand.generate(7)
@@ -18,20 +19,20 @@ function EnterUsername() {
             const game = {
                 liar: "",
                 players: [
-                    document.getElementById('username').value
+                    name
                 ],
                 stage: 0,
                 wordset: wordset
             }
             games.child(id).set(game)
-            hist.replace('/room/' + id)
+            hist.replace('/room/' + id + '&name=' + name)
         }
         // If URL has id, join existing room
         else {
-            const id = url.substring(6)
+            const id = url.substring(7, 14)
             const player = document.getElementById('username').value
             games.child(id).child('players').push(player)
-            hist.replace('/room' + id)
+            hist.replace('/room/' + id + '&name=' + name)
         }
     }
 

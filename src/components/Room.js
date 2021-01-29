@@ -62,7 +62,7 @@ class Room extends React.Component {
 
     // Based off https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/
     async componentDidMount() {
-        const id = window.location.pathname.substring(6)
+        const id = window.location.pathname.substring(6, 13)
         game = firebase.database().ref('games').child(id)
         const players = game.child('players')
         players.on('child_added', player => {
@@ -122,7 +122,7 @@ class Room extends React.Component {
                     {this.state.stage == 0 && // Waiting room
                         <div>
                             <p className='linkLabel'>send your friends this link:</p>
-                            <p className='link'>{'liar-ga.me' + window.location.pathname.replace('room', 'enter')}</p>
+                            <p className='link'>{'liar-ga.me' + window.location.pathname.replace('room', 'enter').substring(0, 14)}</p>
                             <button className='block' onClick={this.updateStage} style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>start</button>
                         </div>
                     }
