@@ -4,21 +4,34 @@ import WaitingRoom from './Waiting-room'
 import GameStarted from './Game-started'
 import GameEnded from './Game-ended'
 
-const id = window.location.pathname.substring(6)
-const game = firebase.database().ref('games').child(id)
-game.child('players').on('child_changed', function(snapshot) {
-    var changed = snapshot.val()
-    console.log('The updated value is ' + changed)
-})
-
 class Room extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            players: [], // define in terms of database
+            players: [],
             stage: 0
         }
     }
+
+    // Based off https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/
+    async componentDidMount() {
+        const id = window.location.pathname.substring(6)
+        const game = firebase.database().ref('games').child(id)
+        game.child('players').once('value', snapshot => {
+            snapshot.forEach((player) => {
+                var updatedPlayers = this.state.players
+                updatedPlayers.push(player.child('name').val())
+                this.setState({
+                    players: updatedPlayers
+                })
+            })
+        })
+    }
+
+    // game.child('players').on('child_changed', function (snapshot) {
+    //     var changed = snapshot.val()
+    //     console.log('The updated value is ' + changed)
+    // })
 
     render() {
         return (

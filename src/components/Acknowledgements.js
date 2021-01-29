@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// https://css-tricks.com/intro-firebase-react/, https://www.developintelligence.com/blog/2017/04/building-a-realtime-chess-game-with-react-and-firebase/, https://medium.com/@hasangi/writing-deleting-and-updating-data-in-firebase-realtime-database-with-javascript-f26113ec8c93
+// https://css-tricks.com/intro-firebase-react/, https://www.developintelligence.com/blog/2017/04/building-a-realtime-chess-game-with-react-and-firebase/, https://medium.com/@hasangi/writing-deleting-and-updating-data-in-firebase-realtime-database-with-javascript-f26113ec8c93, https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/
 
 function Acknowledgements() {
     return (
