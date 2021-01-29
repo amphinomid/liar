@@ -48,7 +48,8 @@ class Room extends React.Component {
             players: [],
             stage: 0,
             category: "",
-            word: ""
+            word: "",
+            liar: ""
         }
         this.updateStage = this.updateStage.bind(this)
     }
@@ -66,7 +67,7 @@ class Room extends React.Component {
         const players = game.child('players')
         players.on('child_added', player => {
             let updatedPlayers = this.state.players
-            updatedPlayers.push(player.child('name').val())
+            updatedPlayers.push(player.val())
             this.setState({
                 players: updatedPlayers
             })
@@ -77,12 +78,16 @@ class Room extends React.Component {
                 stage: stage.val()
             })
             if (stage.val() == 0) {
+                // Determine wordset for current round
                 let wordsetTemp = wordsets[Math.floor(Math.random() * wordsets.length)]
                 let wordset = {
                     category: wordsetTemp[0],
                     word: wordsetTemp[1]
                 }
                 game.update({ 'wordset': wordset })
+                // Determine liar for current round
+                let liar = this.state.players[Math.floor(Math.random() * this.state.players.length)]
+
             }
         })
         const wordset = game.child('wordset')

@@ -11,17 +11,14 @@ function EnterUsername() {
         // If URL doesn't have id, create room
         if (url.length == 6) {
             const id = rand.generate(7)
-            const player = {
-                liar: false,
-                name: document.getElementById('username').value
-            }
             const wordset = {
                 category: "",
                 word: ""
             }
             const game = {
+                liar: "",
                 players: [
-                    player
+                    document.getElementById('username').value
                 ],
                 stage: 0,
                 wordset: wordset
@@ -32,10 +29,7 @@ function EnterUsername() {
         // If URL has id, join existing room
         else {
             const id = url.substring(6)
-            const player = {
-                liar: false,
-                name: document.getElementById('username').value
-            }
+            const player = document.getElementById('username').value
             games.child(id).child('players').push(player)
             hist.replace('/room' + id)
         }
