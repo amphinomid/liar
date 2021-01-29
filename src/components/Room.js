@@ -87,7 +87,7 @@ class Room extends React.Component {
                 game.update({ 'wordset': wordset })
                 // Determine liar for current round
                 let liar = this.state.players[Math.floor(Math.random() * this.state.players.length)]
-
+                game.update({ 'liar': liar })
             }
         })
         const wordset = game.child('wordset')
@@ -95,6 +95,12 @@ class Room extends React.Component {
             this.setState({
                 category: wordset.child('category').val(),
                 word: wordset.child('word').val()
+            })
+        })
+        const liar = game.child('liar')
+        liar.on('value', liar => {
+            this.setState({
+                liar: liar.val()
             })
         })
     }
@@ -132,7 +138,7 @@ class Room extends React.Component {
                     {this.state.stage == 2 && // Game ended
                         <div>
                             <div className='liarLabel'>
-                                __ was the liar!
+                                {this.state.liar} was the liar!
                             </div>
                             <button className='block' onClick={this.updateStage} style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>play again</button>
                         </div>
