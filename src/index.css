@@ -1,10 +1,10 @@
 h1 {
-  font-size: 3rem;
+  font-size: 4vw;
   text-align: center;
 }
 
 button {
-  font-size: 2.25rem;
+  font-size: 2.5vw;
   font-family: monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

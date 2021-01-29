@@ -19,7 +19,7 @@
 }
 
 .usernameLabel {
-    font-size: 3rem;
+    font-size: 4vw;
     font-weight: bold;
     text-align: center;
     margin: 5px auto 5px auto;
@@ -28,7 +28,10 @@
 .usernameInput {
     border: 3px solid #000;
     border-radius: 5px;
-    font-size: 2.25rem;
+    font-family: monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    font-size: 2.75vw;
     text-align: center;
     margin: 5px auto 5px auto;
 }
