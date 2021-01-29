@@ -16,22 +16,24 @@ class Room extends React.Component {
     // Based off https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/
     async componentDidMount() {
         const id = window.location.pathname.substring(6)
-        const game = firebase.database().ref('games').child(id)
-        game.child('players').once('value', snapshot => {
-            snapshot.forEach((player) => {
-                var updatedPlayers = this.state.players
-                updatedPlayers.push(player.child('name').val())
-                this.setState({
-                    players: updatedPlayers
-                })
+        const players = firebase.database().ref('games').child(id).child('players')
+        // players.once('value', snapshot => {
+        //     snapshot.forEach((player) => {
+        //         var updatedPlayers = this.state.players
+        //         updatedPlayers.push(player.child('name').val())
+        //         this.setState({
+        //             players: updatedPlayers
+        //         })
+        //     })
+        // })
+        players.on('child_added', player => {
+            var updatedPlayers = this.state.players
+            updatedPlayers.push(player.child('name').val())
+            this.setState({
+                players: updatedPlayers
             })
-        })
+        });
     }
-
-    // game.child('players').on('child_changed', function (snapshot) {
-    //     var changed = snapshot.val()
-    //     console.log('The updated value is ' + changed)
-    // })
 
     render() {
         return (
