@@ -130,7 +130,12 @@ class Room extends React.Component {
                         <div>
                             <div className='promptLabel'>
                                 category is {this.state.category}<br />
-                                word is {this.state.word} / you are the liar
+                                {window.location.pathname.substring(19) != this.state.liar &&
+                                    <div>word is {this.state.word}</div>
+                                }
+                                {window.location.pathname.substring(19) == this.state.liar &&
+                                    <div>you are the liar</div>
+                                }
                             </div>
                             <button className='block' onClick={this.updateStage} style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>end</button>
                         </div>
