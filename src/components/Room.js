@@ -53,6 +53,7 @@ class Room extends React.Component {
         } else {
             { /* Game ended */ }
             gameDisplay = <div>
+                <div></div><div></div> { /* Weird bug? */ }
                 <div className='liarLabel'>
                     {/* Get liar (API call) */}
                     ahaha was the liar!
