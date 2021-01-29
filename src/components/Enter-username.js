@@ -15,13 +15,16 @@ function EnterUsername() {
                 liar: false,
                 name: document.getElementById('username').value
             }
+            const wordset = {
+                category: "",
+                word: ""
+            }
             const game = {
-                category: '',
                 players: [
                     player
                 ],
                 stage: 0,
-                word: ''
+                wordset: wordset
             }
             games.child(id).set(game)
             hist.replace('/room/' + id)

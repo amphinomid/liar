@@ -2,13 +2,52 @@ import React from 'react'
 import firebase from '../firebase.js'
 var game
 
+// Create wordsets
+var wordsets = []
+
+const food = ['apple', 'pear', 'orange', 'lemon', 'peach', 'persimmon', 'raspberries', 'blackberries', 'blueberries', 'strawberries',
+    'grapes', 'bread', 'rice', 'spaghetti', 'noodles', 'egg', 'fish', 'steak', 'pork', 'chicken', 'cabbage', 'broccoli',
+    'lettuce', 'spinach', 'celery', 'carrot', 'tomato', 'potato', 'onion', 'okra', 'garlic', 'ginger', 'cilantro', 'bell pepper',
+    'eggplant', 'bok choy', 'brussel sprouts', 'cucumber', 'zucchini', 'squash', 'maize', 'corn', 'chocolate', 'lollipop', 'gum']
+const wear = ['hat', 'baseball cap', 'glasses', 'sunglasses', 'scarf', 'T-shirt', 'sweater', 'sweatshirt', 'hoodie', 'jacket', 'coat',
+    'cardigan', 'shorts', 'pants', 'jeans', 'skirt', 'dress', 'gloves', 'mittens', 'socks', 'shoes']
+const transportation = ['walking', 'bike', 'car', 'subway', 'train', 'plane', 'horse', 'skateboard', 'rollerskates', 'road', 'sidewalk',
+    'bridge', 'railroad', 'bike lane', 'highway', 'boat', 'ferry']
+const place = ['home', 'grocery store', 'school', 'library', 'hospital', 'subway station', 'train station', 'airport', 'work', 'restaurant',
+    'park', 'forest', 'desert', 'mountain', 'river']
+const anatomy = ['brain', 'head', 'face', 'hair', 'eyebrows', 'eyelashes', 'eyes', 'nose', 'lips', 'teeth', 'tongue', 'ears', 'chin',
+    'forehead', 'neck', 'shoulder', 'arm', 'bicep', 'elbow', 'wrist', 'hand', 'finger', 'thumb', 'pinky', 'middle finger',
+    'index finger', 'ring finger', 'fingernails', 'lungs', 'heart', 'stomach', 'intestines', 'kidneys', 'leg', 'knee', 'ankle',
+    'foot', 'toenail']
+const bug = ['caterpillar', 'butterfly', 'moth', 'cockroach', 'spider', 'ant', 'centipede', 'millipede', 'ladybug', 'grasshopper',
+    'bee', 'wasp', 'hornet', 'fly', 'fruit fly', 'segfault']
+
+for (let i = 0; i < food.length; i++) {
+    wordsets.push(['food', food[i]])
+}
+for (let i = 1; i < wear.length; i++) {
+    wordsets.push(['things people wear', wear[i]])
+}
+for (let i = 1; i < transportation.length; i++) {
+    wordsets.push(['transportation', transportation[i]])
+}
+for (let i = 1; i < place.length; i++) {
+    wordsets.push(['place', place[i]])
+}
+for (let i = 1; i < anatomy.length; i++) {
+    wordsets.push(['anatomy', anatomy[i]])
+}
+for (let i = 1; i < bug.length; i++) {
+    wordsets.push(['bug', bug[i]])
+}
+
 class Room extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            category: "",
             players: [],
             stage: 0,
+            category: "",
             word: ""
         }
         this.updateStage = this.updateStage.bind(this)
@@ -33,9 +72,24 @@ class Room extends React.Component {
             })
         });
         const stage = game.child('stage')
-        stage.on('value', newStage => {
+        stage.on('value', stage => {
             this.setState({
-                stage: newStage.val()
+                stage: stage.val()
+            })
+            if (stage.val() == 0) {
+                let wordsetTemp = wordsets[Math.floor(Math.random() * wordsets.length)]
+                let wordset = {
+                    category: wordsetTemp[0],
+                    word: wordsetTemp[1]
+                }
+                game.update({ 'wordset': wordset })
+            }
+        })
+        const wordset = game.child('wordset')
+        wordset.on('value', wordset => {
+            this.setState({
+                category: wordset.child('category').val(),
+                word: wordset.child('word').val()
             })
         })
     }
@@ -64,9 +118,8 @@ class Room extends React.Component {
                     {this.state.stage == 1 && // Game started
                         <div>
                             <div className='promptLabel'>
-                                {/* Get category, word, liar, etc. (API call) */}
-                                category is FOOD<br />
-                                word is APPLE / you are the LIAR
+                                category is {this.state.category}<br />
+                                word is {this.state.word} / you are the liar
                             </div>
                             <button className='block' onClick={this.updateStage} style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>end</button>
                         </div>
@@ -74,8 +127,7 @@ class Room extends React.Component {
                     {this.state.stage == 2 && // Game ended
                         <div>
                             <div className='liarLabel'>
-                                {/* Get liar (API call) */}
-                                ahaha was the liar!
+                                __ was the liar!
                             </div>
                             <button className='block' onClick={this.updateStage} style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>play again</button>
                         </div>
