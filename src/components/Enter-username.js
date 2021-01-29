@@ -17,11 +17,10 @@ function EnterUsername() {
             }
             const game = {
                 category: '',
-                ended: false,
                 players: [
                     player
                 ],
-                started: false,
+                stage: 0,
                 word: ''
             }
             games.child(id).set(game)
