@@ -9,12 +9,12 @@ function EnterUsername() {
         const name = document.getElementById('username').value
         // If contains non-alphanumeric
         if (/[^0-9A-Za-z]/.test(name)) {
-            document.getElementById('usernameValidationLabel').innerHTML = 'please enter alphanumeric only.'
+            document.getElementById('usernameValidationLabel').innerHTML = 'please enter alphanumeric only'
         } else {
             const url = window.location.pathname
             const games = firebase.database().ref('games')
             // If URL doesn't have id, create room
-            if (url.length == 6) {
+            if (url.length === 6) {
                 const id = rand.generate(7)
                 const wordset = {
                     category: "",

@@ -77,7 +77,7 @@ class Room extends React.Component {
             this.setState({
                 stage: stage.val()
             })
-            if (stage.val() == 0) {
+            if (stage.val() === 0) {
                 // Determine wordset for current round
                 let wordsetTemp = wordsets[Math.floor(Math.random() * wordsets.length)]
                 let wordset = {
@@ -119,28 +119,28 @@ class Room extends React.Component {
                     </div>
                 </div>
                 <div className='gameScreenRight'>
-                    {this.state.stage == 0 && // Waiting room
+                    {this.state.stage === 0 && // Waiting room
                         <div>
                             <p className='linkLabel'>send your friends this link:</p>
                             <p className='link'>{'liar-ga.me' + window.location.pathname.replace('room', 'enter').substring(0, 14)}</p>
                             <button className='block' onClick={this.updateStage} style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>start</button>
                         </div>
                     }
-                    {this.state.stage == 1 && // Game started
+                    {this.state.stage === 1 && // Game started
                         <div>
                             <div className='promptLabel'>
                                 category is {this.state.category}<br />
-                                {window.location.pathname.substring(19) != this.state.liar &&
+                                {window.location.pathname.substring(19) !== this.state.liar &&
                                     <div>word is {this.state.word}</div>
                                 }
-                                {window.location.pathname.substring(19) == this.state.liar &&
+                                {window.location.pathname.substring(19) === this.state.liar &&
                                     <div>you are the liar</div>
                                 }
                             </div>
                             <button className='block' onClick={this.updateStage} style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto' }}>end</button>
                         </div>
                     }
-                    {this.state.stage == 2 && // Game ended
+                    {this.state.stage === 2 && // Game ended
                         <div>
                             <div className='liarLabel'>
                                 {this.state.liar} was the liar!
