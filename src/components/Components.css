@@ -36,6 +36,11 @@
     margin: 5px auto 5px auto;
 }
 
+.usernameValidationLabel {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
 .gameScreen {
     width: 100vw;
     height: 100vh;
