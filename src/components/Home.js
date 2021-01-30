@@ -8,7 +8,7 @@ function Home() {
                 <Link to='/instructions' style={{ textDecoration: 'none' }}><p className='howToPlayLink' style={{ marginLeft: '15px' }}><u>how to play</u></p></Link>
                 <div style={{ textAlign: 'right', marginLeft: 'auto', marginRight: '15px' }}>
                     <p />
-                    <Link to='/acknowledgements' style={{ textDecoration: 'none' }}><p className='acknowledgementsLink'><u>acknowledgements!</u></p></Link>{' '}
+                    <Link to='/acknowledgements' style={{ textDecoration: 'none' }}><p className='acknowledgementsLink'><u>about / acknowledgements</u></p></Link>{' '}
                 </div>
             </div>
             <div className='container' style={{ height: '90vh' }}>
