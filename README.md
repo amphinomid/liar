@@ -10,4 +10,4 @@ You can visit [https://liar-ga.me](liar-ga.me) to play. Instructions are [here](
 ### Contributing
 As I mentioned, I don't have a ton of experience building Firebase-React apps, so I'm not sure if everything I did was most efficient / best practice / most secure. Also, there are a lot of different scenarios this app doesn't handle gracefully (e.g. joining / leaving mid-game).
 
-tldr &#8212; this project is open to contributions and feedback :)
+**tldr &#8212; this project is open to contributions and feedback :)**
