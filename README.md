@@ -8,6 +8,6 @@ I decided to make this after seeing a [video](https://youtu.be/5MS3iaNmKQE?t=401
 You can visit [liar-ga.me](https://liar-ga.me) to play. Instructions are [here](https://liar-ga.me/instructions). (Would recommend playing over video call with friends)
 
 ### Contributing
-As I mentioned, I don't have a ton of experience building Firebase-React apps, so I'm not sure if everything I did was most efficient / best practice / most secure. Also, there are a lot of different scenarios this app doesn't handle gracefully (e.g. joining / leaving mid-game), and the current set of words is quite limited. If you see anything you want to improve, feel free to report a bug in the Issues section or make a PR!
+As I mentioned, I don't have a ton of experience building Firebase-React apps, so I'm not sure if everything I did was most efficient / best practice / most secure. Also, there are a lot of different scenarios this app doesn't handle gracefully (e.g. joining / leaving mid-game), and the current set of categories / words is quite limited. If you see anything you want to improve, feel free to report a bug in the Issues section or make a PR!
 
 **tldr &#8212; this project is open to contributions and feedback :)**
