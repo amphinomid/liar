@@ -8,4 +8,6 @@ I decided to make this after seeing a [video](https://www.youtube.com/watch?v=5M
 You can visit [https://liar-ga.me](liar-ga.me) to play. Instructions are [here](https://liar-ga.me/instructions). (Would recommend playing over video call)
 
 ### Contributing
-As I mentioned, I don't have a ton of experience building Firebase-React apps, so I'm not sure if everything I did was most efficient / best practice / most secure &#8212; this project is open to contributions and feedback :)
+As I mentioned, I don't have a ton of experience building Firebase-React apps, so I'm not sure if everything I did was most efficient / best practice / most secure. Also, there are a lot of different scenarios this app doesn't handle gracefully (e.g. joining / leaving mid-game).
+
+tldr &#8212; this project is open to contributions and feedback :)
