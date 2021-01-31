@@ -16,6 +16,7 @@ function Home() {
                 <Link to='/enter' style={{ textDecoration: 'none' }}><button className='block' style={{ marginTop: '-15px', marginLeft: 'auto', marginRight: 'auto' }}>create room</button></Link>
             </div>
             <div className='extLinks'>
+                <a href="https://www.producthunt.com/posts/who-s-the-liar?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-who-s-the-liar" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=282827&theme=light" alt="who's the liar? - Play this simple web-based game with your friends! | Product Hunt" width="250" height="54" style={{ marginLeft: '15px', marginTop: '-25px' }} /></a>
                 <div style={{ textAlign: 'right', marginLeft: 'auto', marginRight: '15px' }}>
                     <a href='https://github.com/fibanneacci/liar' target='blank' rel='noreferrer'>built</a> by <a href='https://anli.io' target='_blank' rel='noreferrer'>anne</a>.
                 </div>
