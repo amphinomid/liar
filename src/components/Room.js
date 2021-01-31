@@ -8,9 +8,10 @@ var wordsets = []
 const food = ['apple', 'pear', 'orange', 'lemon', 'peach', 'persimmon', 'raspberries', 'blackberries', 'blueberries', 'strawberries',
     'grapes', 'bread', 'rice', 'spaghetti', 'noodles', 'egg', 'fish', 'steak', 'pork', 'chicken', 'cabbage', 'broccoli',
     'lettuce', 'spinach', 'celery', 'carrot', 'tomato', 'potato', 'onion', 'okra', 'garlic', 'ginger', 'cilantro', 'bell pepper',
-    'eggplant', 'bok choy', 'brussel sprouts', 'cucumber', 'zucchini', 'squash', 'maize', 'corn', 'chocolate', 'lollipop', 'gum']
+    'eggplant', 'bok choy', 'brussel sprouts', 'cucumber', 'zucchini', 'squash', 'maize', 'corn', 'chocolate', 'lollipop', 'gum',
+    'pomegranate']
 const wear = ['hat', 'baseball cap', 'glasses', 'sunglasses', 'scarf', 'T-shirt', 'sweater', 'sweatshirt', 'hoodie', 'jacket', 'coat',
-    'cardigan', 'shorts', 'pants', 'jeans', 'skirt', 'dress', 'gloves', 'mittens', 'socks', 'shoes']
+    'cardigan', 'shorts', 'pants', 'jeans', 'skirt', 'dress', 'gloves', 'mittens', 'socks', 'shoes', 'slippers']
 const transportation = ['walking', 'bike', 'car', 'subway', 'train', 'plane', 'horse', 'skateboard', 'rollerskates', 'road', 'sidewalk',
     'bridge', 'railroad', 'bike lane', 'highway', 'boat', 'ferry']
 const place = ['home', 'grocery store', 'school', 'library', 'hospital', 'subway station', 'train station', 'airport', 'work', 'restaurant',
@@ -21,6 +22,14 @@ const anatomy = ['brain', 'head', 'face', 'hair', 'eyebrows', 'eyelashes', 'eyes
     'foot', 'toenail']
 const bug = ['caterpillar', 'butterfly', 'moth', 'cockroach', 'spider', 'ant', 'centipede', 'millipede', 'ladybug', 'grasshopper',
     'bee', 'wasp', 'hornet', 'fly', 'fruit fly', 'segfault']
+const feeling = ['happy', 'sad', 'angry', 'tired', 'sleepy', 'hungry', 'annoyed', 'scared', 'disgusted', 'surprised', 'shocked', 'bored',
+    'horrified', 'relieved', 'satisfied', 'confused']
+const kitchen = ['cutting board', 'spoon', 'fork', 'knife', 'chopsticks', 'can opener', 'measuring cup', 'cup', 'glass', 'bowl', 'plate',
+    'pan', 'colander', 'spatula', 'whisk', 'blender', 'jar']
+const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'bear', 'deer', 'elk', 'moose', 'bird', 'monkey', 'snake', 'lizard',
+    'iguana', 'chameleon', 'salamander', 'gecko', 'dolphin', 'whale', 'shark', 'penguin', 'seal', 'sea liion', 'walrus', 'polar bear', 'fish',
+    'shrimp', 'plankton', 'eel', 'stingray', 'giraffe', 'elephant', 'squirrel', 'chipmunk', 'hedgehog', 'porcupine', 'cow', 'pig', 'chicken',
+    'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck']
 
 for (let i = 0; i < food.length; i++) {
     wordsets.push(['food', food[i]])
@@ -39,6 +48,15 @@ for (let i = 1; i < anatomy.length; i++) {
 }
 for (let i = 1; i < bug.length; i++) {
     wordsets.push(['bug', bug[i]])
+}
+for (let i = 1; i < feeling.length; i++) {
+    wordsets.push(['feeling', feeling[i]])
+}
+for (let i = 1; i < kitchen.length; i++) {
+    wordsets.push(['in the kitchen', kitchen[i]])
+}
+for (let i = 1; i < animal.length; i++) {
+    wordsets.push(['animal', animal[i]])
 }
 
 class Room extends React.Component {
