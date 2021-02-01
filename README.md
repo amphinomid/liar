@@ -21,3 +21,5 @@ As I mentioned, I don't have a ton of experience building Firebase-React apps, s
 **tldr &#8212; this project is open to contributions and feedback :)**
 
 <a href="https://www.producthunt.com/posts/who-s-the-liar?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-who-s-the-liar" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=282827&theme=light" alt="who's the liar? - Play this simple web-based game with your friends! | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+![Upvote from Product Hunt CEO!](screenshot.png)
