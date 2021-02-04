@@ -7,8 +7,12 @@ function EnterUsername() {
     const hist = useHistory()
     function Submit() {
         const name = document.getElementById('username').value
+        // If username is empty
+        if(name === ""){
+            document.getElementById('usernameValidationLabel').innerHTML = 'please enter username to continue'
+        }
         // If contains non-alphanumeric
-        if (/[^0-9A-Za-z]/.test(name)) {
+        else if (/[^0-9A-Za-z]/.test(name)) {
             document.getElementById('usernameValidationLabel').innerHTML = 'please enter alphanumeric only'
         } else {
             const url = window.location.pathname
