@@ -7,12 +7,8 @@ function EnterUsername() {
     const hist = useHistory()
     function Submit() {
         const name = document.getElementById('username').value
-        // If username is empty
-        if(name === ""){
-            document.getElementById('usernameValidationLabel').innerHTML = 'please enter username to continue'
-        }
-        // If username is more than 40 characters
-        else if(name.length > 40){
+        // If username is empty or more than 40 characters
+        if(name.length > 40 || name.length === 0){
             document.getElementById('usernameValidationLabel').innerHTML = 'please enter a username between 1 to 40 characters'
         }
         // If contains non-alphanumeric
