@@ -9,7 +9,7 @@ const food = ['apple', 'pear', 'orange', 'lemon', 'peach', 'persimmon', 'raspber
     'grapes', 'bread', 'rice', 'spaghetti', 'noodles', 'egg', 'fish', 'steak', 'pork', 'chicken', 'cabbage', 'broccoli',
     'lettuce', 'spinach', 'celery', 'carrot', 'tomato', 'potato', 'onion', 'okra', 'garlic', 'ginger', 'cilantro', 'bell pepper',
     'eggplant', 'bok choy', 'brussel sprouts', 'cucumber', 'zucchini', 'squash', 'maize', 'corn', 'chocolate', 'lollipop', 'gum',
-    'pomegranate', 'burger', 'donut', 'pizza', 'sweet', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster']
+    'pomegranate', 'burger', 'donut', 'pizza', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster', 'tofu']
 const wear = ['hat', 'baseball cap', 'glasses', 'sunglasses', 'scarf', 'T-shirt', 'sweater', 'sweatshirt', 'hoodie', 'jacket', 'coat',
     'cardigan', 'shorts', 'pants', 'jeans', 'skirt', 'dress', 'gloves', 'mittens', 'socks', 'shoes', 'slippers']
 const transportation = ['walking', 'bike', 'car', 'subway', 'train', 'plane', 'horse', 'skateboard', 'rollerskates', 'road', 'sidewalk',
@@ -26,6 +26,8 @@ const feeling = ['happy', 'sad', 'angry', 'tired', 'sleepy', 'hungry', 'annoyed'
     'horrified', 'relieved', 'satisfied', 'confused']
 const kitchen = ['cutting board', 'spoon', 'fork', 'knife', 'chopsticks', 'can opener', 'measuring cup', 'cup', 'glass', 'bowl', 'plate',
     'pan', 'colander', 'spatula', 'whisk', 'blender', 'jar']
+const school_subjects = ['math', 'science', 'social studies', 'language arts', 'biology', 'chemistry', 'physics', 'earth science', 'computer science',
+    'history', 'literature', 'government', 'music', 'art', 'art history', 'algebra', 'geometry', 'trigonometry', 'calculus']
 const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'bear', 'deer', 'elk', 'moose', 'bird', 'monkey', 'snake', 'lizard',
     'iguana', 'chameleon', 'salamander', 'gecko', 'dolphin', 'whale', 'shark', 'penguin', 'seal', 'sea liion', 'walrus', 'polar bear', 'fish',
     'shrimp', 'plankton', 'eel', 'stingray', 'giraffe', 'elephant', 'squirrel', 'chipmunk', 'hedgehog', 'porcupine', 'cow', 'pig', 'chicken',
@@ -56,6 +58,9 @@ for (let i = 1; i < feeling.length; i++) {
 }
 for (let i = 1; i < kitchen.length; i++) {
     wordsets.push(['in the kitchen', kitchen[i]])
+}
+for (let i = 1; i < school_subjects.length; i++) {
+    school_subjects.push(['school subjects', school_subjects[i]])
 }
 for (let i = 1; i < animal.length; i++) {
     wordsets.push(['animal', animal[i]])
