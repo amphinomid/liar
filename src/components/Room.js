@@ -30,8 +30,8 @@ const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'be
     'iguana', 'chameleon', 'salamander', 'gecko', 'dolphin', 'whale', 'shark', 'penguin', 'seal', 'sea liion', 'walrus', 'polar bear', 'fish',
     'shrimp', 'plankton', 'eel', 'stingray', 'giraffe', 'elephant', 'squirrel', 'chipmunk', 'hedgehog', 'porcupine', 'cow', 'pig', 'chicken',
     'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck']
-const kpop = ['Red Velvet', 'BTS', 'Blackpink', 'EXO', 'Monsta X', "Girl's Generation", 'Momoland', 'Itzy', 'iKON', 'GOT7', 'WINNER',
-    'Dream Catcher', 'T-ara', 'oh!GG', '2NE1', 'AOA', 'Apink']
+/*const kpop = ['Red Velvet', 'BTS', 'Blackpink', 'EXO', 'Monsta X', "Girl's Generation", 'Momoland', 'Itzy', 'iKON', 'GOT7', 'WINNER', 'Dreamcatcher',
+    'T-ara', 'oh!GG', '2NE1', 'AOA', 'Apink']*/
 
 for (let i = 0; i < food.length; i++) {
     wordsets.push(['food', food[i]])
@@ -60,9 +60,9 @@ for (let i = 1; i < kitchen.length; i++) {
 for (let i = 1; i < animal.length; i++) {
     wordsets.push(['animal', animal[i]])
 }
-for (let i = 1; i < kpop.length; i++) {
+/*for (let i = 1; i < kpop.length; i++) {
     wordsets.push(['K-POP', kpop[i]])
-}
+}*/
 
 class Room extends React.Component {
     constructor(props) {
