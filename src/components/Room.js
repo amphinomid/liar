@@ -26,12 +26,17 @@ const feeling = ['happy', 'sad', 'angry', 'tired', 'sleepy', 'hungry', 'annoyed'
     'horrified', 'relieved', 'satisfied', 'confused']
 const kitchen = ['cutting board', 'spoon', 'fork', 'knife', 'chopsticks', 'can opener', 'measuring cup', 'cup', 'glass', 'bowl', 'plate',
     'pan', 'colander', 'spatula', 'whisk', 'blender', 'jar']
-const school_subjects = ['math', 'science', 'social studies', 'language arts', 'biology', 'chemistry', 'physics', 'earth science', 'computer science',
+const school_subject = ['math', 'science', 'social studies', 'language arts', 'biology', 'chemistry', 'physics', 'earth science', 'computer science',
     'history', 'literature', 'government', 'music', 'art', 'art history', 'algebra', 'geometry', 'trigonometry', 'calculus']
 const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'bear', 'deer', 'elk', 'moose', 'bird', 'monkey', 'snake', 'lizard',
     'iguana', 'chameleon', 'salamander', 'gecko', 'dolphin', 'whale', 'shark', 'penguin', 'seal', 'sea liion', 'walrus', 'polar bear', 'fish',
     'shrimp', 'plankton', 'eel', 'stingray', 'giraffe', 'elephant', 'squirrel', 'chipmunk', 'hedgehog', 'porcupine', 'cow', 'pig', 'chicken',
     'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck']
+const around_the_house = []
+const outdoors = []
+const hobby = []
+const technology = []
+const media = []
 /*const kpop = ['Red Velvet', 'BTS', 'Blackpink', 'EXO', 'Monsta X', "Girl's Generation", 'Momoland', 'Itzy', 'iKON', 'GOT7', 'WINNER', 'Dreamcatcher',
     'T-ara', 'oh!GG', '2NE1', 'AOA', 'Apink']*/
 
@@ -59,8 +64,8 @@ for (let i = 1; i < feeling.length; i++) {
 for (let i = 1; i < kitchen.length; i++) {
     wordsets.push(['in the kitchen', kitchen[i]])
 }
-for (let i = 1; i < school_subjects.length; i++) {
-    school_subjects.push(['school subjects', school_subjects[i]])
+for (let i = 1; i < school_subject.length; i++) {
+    wordsets.push(['school subject', school_subject[i]])
 }
 for (let i = 1; i < animal.length; i++) {
     wordsets.push(['animal', animal[i]])
@@ -68,6 +73,21 @@ for (let i = 1; i < animal.length; i++) {
 /*for (let i = 1; i < kpop.length; i++) {
     wordsets.push(['K-POP', kpop[i]])
 }*/
+for (let i = 1; i < around_the_house.length; i++) {
+    wordsets.push(['around the house', around_the_house[i]])
+}
+for (let i = 1; i < outdoors.length; i++) {
+    wordsets.push(['outdoors', outdoors[i]])
+}
+for (let i = 1; i < hobby.length; i++) {
+    wordsets.push(['hobby', hobby[i]])
+}
+for (let i = 1; i < technology.length; i++) {
+    wordsets.push(['technology', technology[i]])
+}
+for (let i = 1; i < media.length; i++) {
+    wordsets.push(['media', media[i]])
+}
 
 class Room extends React.Component {
     constructor(props) {
