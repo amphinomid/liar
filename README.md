@@ -18,6 +18,8 @@ As I mentioned, I don't have a ton of experience building Firebase-React apps, s
 
 `export default firebase;`
 
+To add categories and words, follow the pattern in the Room.js file. Please do not add harmful or offensive words; those will be removed.
+
 **tldr &#8212; this project is open to contributions and feedback :)**
 
 ![Upvote from Product Hunt CEO!](screenshot.png)
