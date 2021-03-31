@@ -9,7 +9,7 @@ const food = ['apple', 'pear', 'orange', 'lemon', 'peach', 'persimmon', 'raspber
     'grapes', 'bread', 'rice', 'spaghetti', 'noodles', 'egg', 'fish', 'steak', 'pork', 'chicken', 'cabbage', 'broccoli',
     'lettuce', 'spinach', 'celery', 'carrot', 'tomato', 'potato', 'onion', 'okra', 'garlic', 'ginger', 'cilantro', 'bell pepper',
     'eggplant', 'bok choy', 'brussel sprouts', 'cucumber', 'zucchini', 'squash', 'maize', 'corn', 'chocolate', 'lollipop', 'gum',
-    'pomegranate', 'burger', 'donut', 'pizza', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster', 'tofu']
+    'pomegranate', 'burger', 'donut', 'pizza', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster', 'tofu', 'sushi']
 const wear = ['hat', 'baseball cap', 'glasses', 'sunglasses', 'scarf', 'T-shirt', 'sweater', 'sweatshirt', 'hoodie', 'jacket', 'coat',
     'cardigan', 'shorts', 'pants', 'jeans', 'skirt', 'dress', 'gloves', 'mittens', 'socks', 'shoes', 'slippers']
 const transportation = ['walking', 'bike', 'car', 'subway', 'train', 'plane', 'horse', 'skateboard', 'rollerskates', 'road', 'sidewalk',
@@ -23,24 +23,25 @@ const anatomy = ['brain', 'head', 'face', 'hair', 'eyebrows', 'eyelashes', 'eyes
 const bug = ['caterpillar', 'butterfly', 'moth', 'cockroach', 'spider', 'ant', 'centipede', 'millipede', 'ladybug', 'grasshopper',
     'bee', 'wasp', 'hornet', 'fly', 'fruit fly', 'segfault']
 const feeling = ['happy', 'sad', 'angry', 'tired', 'sleepy', 'hungry', 'annoyed', 'scared', 'disgusted', 'surprised', 'shocked', 'bored',
-    'horrified', 'relieved', 'satisfied', 'confused']
+    'horrified', 'relieved', 'satisfied', 'confused', 'nervous']
 const kitchen = ['cutting board', 'spoon', 'fork', 'knife', 'chopsticks', 'can opener', 'measuring cup', 'cup', 'glass', 'bowl', 'plate',
-    'pan', 'colander', 'spatula', 'whisk', 'blender', 'jar']
+    'pan', 'colander', 'spatula', 'whisk', 'blender', 'jar', 'rice cooker', 'toaster', 'toaster oven', 'stove']
 const school_subject = ['math', 'science', 'social studies', 'language arts', 'biology', 'chemistry', 'physics', 'earth science', 'computer science',
-    'history', 'literature', 'government', 'music', 'art', 'art history', 'algebra', 'geometry', 'trigonometry', 'calculus']
+    'history', 'literature', 'government', 'music', 'art', 'art history', 'algebra', 'geometry', 'trigonometry', 'calculus', 'health']
 const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'bear', 'deer', 'elk', 'moose', 'bird', 'monkey', 'snake', 'lizard',
-    'iguana', 'chameleon', 'salamander', 'gecko', 'dolphin', 'whale', 'shark', 'penguin', 'seal', 'sea liion', 'walrus', 'polar bear', 'fish',
+    'iguana', 'chameleon', 'salamander', 'gecko', 'dolphin', 'whale', 'shark', 'penguin', 'seal', 'sea lion', 'walrus', 'polar bear', 'fish',
     'shrimp', 'plankton', 'eel', 'stingray', 'giraffe', 'elephant', 'squirrel', 'chipmunk', 'hedgehog', 'porcupine', 'cow', 'pig', 'chicken',
-    'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck']
+    'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck', 'horse']
 const around_the_house = []
 const outdoors = []
 const hobby = ['aquascaping', 'acroyoga', 'blogging', 'interior decorating', 'photography', 'diy', 'crocheting', 'lego', 'building', 'lock picking',
                'homebrewing', 'glassblowing', 'cheesemaking', 'candle making', 'weaving', 'storytelling', 'soapmaking', 'juggling',
-               'fingerpainting', 'drawing', 'writing poetry', 'baking', 'metalworking', 'thrifting']
+               'fingerpainting', 'drawing', 'writing poetry', 'baking', 'metalworking', 'thrifting', 'snowboarding', 'camping', 'painting', 'hiking', 'cooking', 'golfing', 'surfing', 'snorkeling', 'dancing', 'gymnastics', 'yoga', 'ballet']
 const technology = []
 const media = []
 /*const kpop = ['Red Velvet', 'BTS', 'Blackpink', 'EXO', 'Monsta X', "Girl's Generation", 'Momoland', 'Itzy', 'iKON', 'GOT7', 'WINNER', 'Dreamcatcher',
     'T-ara', 'oh!GG', '2NE1', 'AOA', 'Apink']*/
+const sports = ['basketball', 'volleyball', 'badminton', 'hockey', 'ice skating', 'tennis', 'cycling', 'surfing', 'fencing', 'boxing', 'soccer', 'cricket', 'table tennis', 'rowing', 'snowboarding', 'baseball', 'bowling', 'skateboarding', 'figure skating', 'golf', 'canoeing', 'horse racing', 'archery', 'gymnastics', 'handball', 'ice hockey', 'bodybuilding', 'recreational fishing', 'karate', 'field hockey', 'lacrosse', 'softball', 'bobsleigh', 'judo', 'rafting', 'artistic swimming', 'olympic weightlifting', 'rhythmic gymnastics', 'racquetball', 'sailing', 'cheerleading', 'football', 'dodgeball', 'pole vault', 'darts', 'croquet', 'polo', 'shot put', 'taekwando', 'wrestling', 'rubgy']
 
 for (let i = 0; i < food.length; i++) {
     wordsets.push(['food', food[i]])
@@ -89,6 +90,9 @@ for (let i = 1; i < technology.length; i++) {
 }
 for (let i = 1; i < media.length; i++) {
     wordsets.push(['media', media[i]])
+}
+for (let i = 1; i < sports.length; i++) {
+    wordsets.push(['sports', sports[i]])
 }
 
 class Room extends React.Component {
