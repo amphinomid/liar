@@ -19,7 +19,10 @@ function EnterUsername() {
             const games = firebase.database().ref('games')
             // If URL doesn't have id, create room
             if (url.length === 6) {
-                const id = rand.generate(7)
+                const id = rand.generate({
+                    length: 7,
+                    charset: 'hex'
+                });
                 const wordset = {
                     category: "",
                     word: ""

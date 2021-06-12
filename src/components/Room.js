@@ -39,7 +39,8 @@ const hobby = ['aquascaping', 'acroyoga', 'blogging', 'interior decorating', 'ph
                'fingerpainting', 'drawing', 'writing poetry', 'baking', 'metalworking', 'thrifting', 'snowboarding', 'camping', 'painting', 'hiking', 'cooking', 'golfing', 'surfing', 'snorkeling', 'dancing', 'gymnastics', 'yoga', 'ballet']
 const technology = []
 const media = []
-/*const kpop = ['Red Velvet', 'BTS', 'Blackpink', 'EXO', 'NCT' , 'Monsta X', "Girl's Generation", 'Momoland', 'Itzy', 'iKON', 'GOT7', 'WINNER', 'Dreamcatcher',
+const flowers = ['rose','Daisy','Rose','Iris','Narcissus','Orchid','Tulip','Sunflower','Cyclamen','Carnation','Poppy','Pansy','Violet','Mimosa','Daffodil','Lily','Hyacinth','Anemone','Gladiolus','Forget-me-not','Bluebell','Bougainvillea','Buttercup','Cactus flower','Camellia','Hibiscus','Honeysuckle','Jasmine','Lavender','Lilac','Lotus','Marigold']
+/*const kpop = ['Red Velvet', 'BTS', 'Blackpink', 'EXO', 'Monsta X', "Girl's Generation", 'Momoland', 'Itzy', 'iKON', 'GOT7', 'WINNER', 'Dreamcatcher',
     'T-ara', 'oh!GG', '2NE1', 'AOA', 'Apink']*/
 const sports = ['basketball', 'volleyball', 'badminton', 'hockey', 'ice skating', 'tennis', 'cycling', 'surfing', 'fencing', 'boxing', 'soccer', 'cricket', 'table tennis', 'rowing', 'snowboarding', 'baseball', 'bowling', 'skateboarding', 'figure skating', 'golf', 'canoeing', 'horse racing', 'archery', 'gymnastics', 'handball', 'ice hockey', 'bodybuilding', 'recreational fishing', 'karate', 'field hockey', 'lacrosse', 'softball', 'bobsleigh', 'judo', 'rafting', 'artistic swimming', 'olympic weightlifting', 'rhythmic gymnastics', 'racquetball', 'sailing', 'cheerleading', 'football', 'dodgeball', 'pole vault', 'darts', 'croquet', 'polo', 'shot put', 'taekwando', 'wrestling', 'rubgy']
 const colors = ['red', 'yellow', 'blue', 'brown', 'orange', 'green', 'violet', 'black', 'carnation pink', 'yellow orange', 'blue green', 'red violet', 'red orange', 'yellow green', 'blue violet', 'white', 'violet red', 'dandelion', 'cerulean', 'apricot', 'scarlet', 'green yellow', 'indigo','gray']
@@ -90,6 +91,9 @@ for (let i = 1; i < technology.length; i++) {
 }
 for (let i = 1; i < media.length; i++) {
     wordsets.push(['media', media[i]])
+}
+for (let i = 1; i < media.length; i++) {
+    wordsets.push(['flowers', flowers[i]])
 }
 for (let i = 1; i < sports.length; i++) {
     wordsets.push(['sports', sports[i]])
