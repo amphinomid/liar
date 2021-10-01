@@ -37,7 +37,7 @@ const outdoors = []
 const hobby = ['aquascaping', 'acroyoga', 'blogging', 'interior decorating', 'photography', 'diy', 'crocheting', 'lego', 'building', 'lock picking',
                'homebrewing', 'glassblowing', 'cheesemaking', 'candle making', 'weaving', 'storytelling', 'soapmaking', 'juggling',
                'fingerpainting', 'drawing', 'writing poetry', 'baking', 'metalworking', 'thrifting', 'snowboarding', 'camping', 'painting', 'hiking', 'cooking', 'golfing', 'surfing', 'snorkeling', 'dancing', 'gymnastics', 'yoga', 'ballet']
-const technology = []
+const technology = ['phone', 'computer', 'laptop', 'tablet', 'smartwatch', 'camera', 'printer', 'television', 'radio', 'gaming console', 'projector', 'speakers']
 const media = []
 const flowers = ['rose','Daisy','Rose','Iris','Narcissus','Orchid','Tulip','Sunflower','Cyclamen','Carnation','Poppy','Pansy','Violet','Mimosa','Daffodil','Lily','Hyacinth','Anemone','Gladiolus','Forget-me-not','Bluebell','Bougainvillea','Buttercup','Cactus flower','Camellia','Hibiscus','Honeysuckle','Jasmine','Lavender','Lilac','Lotus','Marigold']
 /*const kpop = ['Red Velvet', 'BTS', 'Blackpink', 'EXO', 'Monsta X', "Girl's Generation", 'Momoland', 'Itzy', 'iKON', 'GOT7', 'WINNER', 'Dreamcatcher',
