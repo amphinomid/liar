@@ -31,7 +31,7 @@ const school_subject = ['math', 'science', 'social studies', 'language arts', 'b
 const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'bear', 'deer', 'elk', 'moose', 'bird', 'monkey', 'snake', 'lizard',
     'iguana', 'chameleon', 'salamander', 'gecko', 'dolphin', 'whale', 'shark', 'penguin', 'seal', 'sea lion', 'walrus', 'polar bear', 'fish',
     'shrimp', 'plankton', 'eel', 'stingray', 'giraffe', 'elephant', 'squirrel', 'chipmunk', 'hedgehog', 'porcupine', 'cow', 'pig', 'chicken',
-    'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck', 'horse']
+    'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck', 'horse', 'red panda']
 const around_the_house = []
 const outdoors = []
 const hobby = ['aquascaping', 'acroyoga', 'blogging', 'interior decorating', 'photography', 'diy', 'crocheting', 'lego', 'building', 'lock picking',
