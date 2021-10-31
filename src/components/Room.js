@@ -10,6 +10,7 @@ const food = ['apple', 'mango', 'banana', 'pear', 'orange', 'lemon', 'peach', 'p
     'lettuce', 'spinach', 'celery', 'carrot', 'tomato', 'potato', 'onion', 'okra', 'garlic', 'ginger', 'cilantro', 'bell pepper',
     'eggplant', 'bok choy', 'brussel sprouts', 'cucumber', 'zucchini', 'squash', 'maize', 'corn', 'chocolate', 'lollipop', 'gum',
     'pomegranate', 'burger', 'donut', 'pizza', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster', 'tofu', 'sushi']
+const drink = ['water', 'milk', 'soda', 'lemonade', 'beer', 'wine', 'juice', 'cider', 'ayran']
 const wear = ['hat', 'baseball cap', 'glasses', 'sunglasses', 'scarf', 'T-shirt', 'sweater', 'sweatshirt', 'hoodie', 'jacket', 'coat',
     'cardigan', 'shorts', 'pants', 'jeans', 'skirt', 'dress', 'gloves', 'mittens', 'socks', 'shoes', 'slippers']
 const transportation = ['walking', 'bike', 'car', 'subway', 'train', 'plane', 'horse', 'skateboard', 'rollerskates', 'road', 'sidewalk',
@@ -46,6 +47,9 @@ const sports = ['basketball', 'volleyball', 'badminton', 'hockey', 'ice skating'
 const colors = ['red', 'yellow', 'blue', 'brown', 'orange', 'green', 'violet', 'black', 'carnation pink', 'yellow orange', 'blue green', 'red violet', 'red orange', 'yellow green', 'blue violet', 'white', 'violet red', 'dandelion', 'cerulean', 'apricot', 'scarlet', 'green yellow', 'indigo','gray']
 for (let i = 0; i < food.length; i++) {
     wordsets.push(['food', food[i]])
+}
+for (let i = 0; i < drink.length; i++) {
+    wordsets.push(['drink', drink[i]])
 }
 for (let i = 1; i < wear.length; i++) {
     wordsets.push(['things people wear', wear[i]])
