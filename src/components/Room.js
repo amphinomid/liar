@@ -6,22 +6,22 @@ var game
 var wordsets = []
 
 const food = ['apple', 'mango', 'banana', 'pear', 'orange', 'lemon', 'peach', 'persimmon', 'raspberries', 'blackberries', 'blueberries', 'strawberries',
-    'grapes', 'bread', 'rice', 'spaghetti', 'noodles', 'egg', 'fish', 'steak', 'pork', 'chicken', 'cabbage', 'broccoli',
+    'grapes', 'bread', 'bun', 'rice', 'spaghetti', 'noodles', 'egg', 'fish', 'steak', 'pork', 'chicken', 'cabbage', 'broccoli',
     'lettuce', 'spinach', 'celery', 'carrot', 'tomato', 'potato', 'onion', 'okra', 'garlic', 'ginger', 'cilantro', 'bell pepper',
     'eggplant', 'bok choy', 'brussel sprouts', 'cucumber', 'zucchini', 'squash', 'maize', 'corn', 'chocolate', 'lollipop', 'gum',
-    'pomegranate', 'burger', 'donut', 'pizza', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster', 'tofu', 'sushi']
+    'pomegranate', 'burger', 'donut', 'pizza', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster', 'tofu', 'sushi', 'bacon', 'soup' ]
 const wear = ['hat', 'baseball cap', 'glasses', 'sunglasses', 'scarf', 'T-shirt', 'sweater', 'sweatshirt', 'hoodie', 'jacket', 'coat',
     'cardigan', 'shorts', 'pants', 'jeans', 'skirt', 'dress', 'gloves', 'mittens', 'socks', 'shoes', 'slippers']
 const transportation = ['walking', 'bike', 'car', 'subway', 'train', 'plane', 'horse', 'skateboard', 'rollerskates', 'road', 'sidewalk',
-    'bridge', 'railroad', 'bike lane', 'highway', 'boat', 'ferry', 'ship', 'scooter', 'bicycle', 'helicopter', 'rickshaw', 'truck', 'steamer']
+    'bridge', 'railroad', 'bike lane', 'highway', 'boat', 'ferry', 'ship', 'scooter', 'bicycle', 'helicopter', 'rickshaw', 'truck', 'steamer', 'tuktuk']
 const place = ['home', 'grocery store', 'convenience store', 'market', 'school', 'college', 'university', 'library', 'hospital', 'subway station', 'train station', 'airport', 'work', 'restaurant',
     'park', 'forest', 'desert', 'mountain', 'river', 'sauna', 'salon', 'beach', 'karoke room', 'photo booth', 'museum', 'temple', 'garden', 'stadium','music store']
 const anatomy = ['brain', 'head', 'face', 'hair', 'eyebrows', 'eyelashes', 'eyes', 'nose', 'lips', 'teeth', 'tongue', 'ears', 'chin',
     'forehead', 'neck', 'shoulder', 'arm', 'bicep', 'elbow', 'wrist', 'hand', 'finger', 'thumb', 'pinky', 'middle finger',
     'index finger', 'ring finger', 'fingernails', 'lungs', 'heart', 'stomach', 'intestines', 'kidneys', 'leg', 'knee', 'ankle',
-    'foot', 'toenail']
+    'foot', 'toenail', 'toe']
 const bug = ['caterpillar', 'butterfly', 'moth', 'cockroach', 'spider', 'ant', 'centipede', 'millipede', 'ladybug', 'grasshopper',
-    'bee', 'wasp', 'hornet', 'fly', 'fruit fly', 'segfault']
+    'bee', 'wasp', 'hornet', 'fly', 'fruit fly', 'segfault','beetle']
 const feeling = ['happy', 'sad', 'angry', 'tired', 'sleepy', 'hungry', 'annoyed', 'scared', 'disgusted', 'surprised', 'shocked', 'bored',
     'horrified', 'relieved', 'satisfied', 'confused', 'nervous']
 const kitchen = ['cutting board', 'spoon', 'fork', 'knife', 'chopsticks', 'can opener', 'measuring cup', 'cup', 'glass', 'bowl', 'plate',
@@ -32,18 +32,18 @@ const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'be
     'iguana', 'chameleon', 'salamander', 'gecko', 'dolphin', 'whale', 'shark', 'penguin', 'seal', 'sea lion', 'walrus', 'polar bear', 'fish',
     'shrimp', 'plankton', 'eel', 'stingray', 'giraffe', 'elephant', 'squirrel', 'chipmunk', 'hedgehog', 'porcupine', 'cow', 'pig', 'chicken',
     'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck', 'horse', 'red panda']
-const around_the_house = []
+const around_the_house = ['bathroom', 'bedroom', 'kitchen', 'living room', 'basement', 'sunroom']
 const outdoors = []
 const hobby = ['aquascaping', 'acroyoga', 'blogging', 'interior decorating', 'photography', 'diy', 'crocheting', 'lego', 'building', 'lock picking',
                'homebrewing', 'glassblowing', 'cheesemaking', 'candle making', 'weaving', 'storytelling', 'soapmaking', 'juggling',
                'fingerpainting', 'drawing', 'writing poetry', 'baking', 'metalworking', 'thrifting', 'snowboarding', 'camping', 'painting', 'hiking', 'cooking', 'golfing', 'surfing', 'snorkeling', 'dancing', 'gymnastics', 'yoga', 'ballet']
 const technology = []
-const media = []
+const media = ['painting', 'pottery']
 const flowers = ['rose','Daisy','Rose','Iris','Narcissus','Orchid','Tulip','Sunflower','Cyclamen','Carnation','Poppy','Pansy','Violet','Mimosa','Daffodil','Lily','Hyacinth','Anemone','Gladiolus','Forget-me-not','Bluebell','Bougainvillea','Buttercup','Cactus flower','Camellia','Hibiscus','Honeysuckle','Jasmine','Lavender','Lilac','Lotus','Marigold']
 /*const kpop = ['Red Velvet', 'BTS', 'Blackpink', 'EXO', 'Monsta X', "Girl's Generation", 'Momoland', 'Itzy', 'iKON', 'GOT7', 'WINNER', 'Dreamcatcher',
     'T-ara', 'oh!GG', '2NE1', 'AOA', 'Apink']*/
 const sports = ['basketball', 'volleyball', 'badminton', 'hockey', 'ice skating', 'tennis', 'cycling', 'surfing', 'fencing', 'boxing', 'soccer', 'cricket', 'table tennis', 'rowing', 'snowboarding', 'baseball', 'bowling', 'skateboarding', 'figure skating', 'golf', 'canoeing', 'horse racing', 'archery', 'gymnastics', 'handball', 'ice hockey', 'bodybuilding', 'recreational fishing', 'karate', 'field hockey', 'lacrosse', 'softball', 'bobsleigh', 'judo', 'rafting', 'artistic swimming', 'olympic weightlifting', 'rhythmic gymnastics', 'racquetball', 'sailing', 'cheerleading', 'football', 'dodgeball', 'pole vault', 'darts', 'croquet', 'polo', 'shot put', 'taekwando', 'wrestling', 'rubgy']
-const colors = ['red', 'yellow', 'blue', 'brown', 'orange', 'green', 'violet', 'black', 'carnation pink', 'yellow orange', 'blue green', 'red violet', 'red orange', 'yellow green', 'blue violet', 'white', 'violet red', 'dandelion', 'cerulean', 'apricot', 'scarlet', 'green yellow', 'indigo','gray']
+const colors = ['red', 'yellow', 'blue', 'brown', 'orange', 'green', 'violet', 'black','grey','navy blue', 'carnation pink', 'yellow orange', 'blue green', 'red violet', 'red orange', 'yellow green', 'blue violet', 'white', 'violet red', 'dandelion', 'cerulean', 'apricot', 'scarlet', 'green yellow', 'indigo','gray']
 for (let i = 0; i < food.length; i++) {
     wordsets.push(['food', food[i]])
 }
