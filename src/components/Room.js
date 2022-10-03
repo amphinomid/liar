@@ -35,6 +35,7 @@ const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'be
     'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck', 'horse', 'red panda']
 const around_the_house = ['bathroom', 'bedroom', 'kitchen', 'living room', 'basement', 'sunroom']
 const outdoors = []
+const electronics = ['clock', 'laptop', 'speaker', 'camera', 'iron', 'ceiling fan', 'usb drive', 'headphones', 'mobile phone', 'tablet,' 'pc', 'kettle', 'vacuum cleaner', 'lamp', 'blender', 'printer', 'copier', 'game console', 'weighing scale', 'dvd player', 'earphones']
 const hobby = ['aquascaping', 'acroyoga', 'blogging', 'interior decorating', 'photography', 'diy', 'crocheting', 'lego', 'building', 'lock picking',
                'homebrewing', 'glassblowing', 'cheesemaking', 'candle making', 'weaving', 'storytelling', 'soapmaking', 'juggling',
                'fingerpainting', 'drawing', 'writing poetry', 'baking', 'metalworking', 'thrifting', 'snowboarding', 'camping', 'painting', 'hiking', 'cooking', 'golfing', 'surfing', 'snorkeling', 'dancing', 'gymnastics', 'yoga', 'ballet']
@@ -51,6 +52,9 @@ for (let i = 0; i < food.length; i++) {
 }
 for (let i = 0; i < drink.length; i++) {
     wordsets.push(['drink', drink[i]])
+}
+for (let i = 0; i < electronics.length; i++) {
+    wordsets.push(['electronics', electrnoics[i]])
 }
 for (let i = 1; i < wear.length; i++) {
     wordsets.push(['things people wear', wear[i]])
