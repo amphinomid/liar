@@ -46,6 +46,10 @@ const flowers = ['rose','Daisy','Rose','Iris','Narcissus','Orchid','Tulip','Sunf
 const sports = ['basketball', 'volleyball', 'badminton', 'hockey', 'ice skating', 'tennis', 'cycling', 'surfing', 'fencing', 'boxing', 'soccer', 'cricket', 'table tennis', 'rowing', 'snowboarding', 'baseball', 'bowling', 'skateboarding', 'figure skating', 'golf', 'canoeing', 'horse racing', 'archery', 'gymnastics', 'handball', 'ice hockey', 'bodybuilding', 'recreational fishing', 'karate', 'field hockey', 'lacrosse', 'softball', 'bobsleigh', 'judo', 'rafting', 'artistic swimming', 'olympic weightlifting', 'rhythmic gymnastics', 'racquetball', 'sailing', 'cheerleading', 'football', 'dodgeball', 'pole vault', 'darts', 'croquet', 'polo', 'shot put', 'taekwando', 'wrestling', 'rubgy']
 const colors = ['red', 'yellow', 'blue', 'brown', 'orange', 'green', 'violet', 'black','grey','navy blue', 'carnation pink', 'yellow orange', 'blue green', 'red violet', 'red orange', 'yellow green', 'blue violet', 'white', 'violet red', 'dandelion', 'cerulean', 'apricot', 'scarlet', 'green yellow', 'indigo','gray']
 const weather =['sunny', 'clear','cloudy','overcast','rain','drizzle','hail','humid','snow','thunderstorm','tornado','hurricane','fog','sandstorm']
+const profession =['doctor', 'lawyer', 'mayor', 'teacher', 'plumber', 'security guard', 'concierge', 'salesperson', 'dentist', 'pharmacist', 'programmer', 'clerk', 'engineer',
+                   'therapist', 'secretary', 'trainer', 'athlete', 'coach', 'banker', 'paramedic', 'firefighter', 'ethnographer', 'researcher', 'hairdresser', 'artist', 
+                   'social worker', 'architect', 'journalist', 'curator', 'writer', 'janitor', 'cashier', 'carpenter', 'sailor', 'telemarketer', 'housekeeper', 'gardener']
+        
 for (let i = 0; i < food.length; i++) {
     wordsets.push(['food', food[i]])
 }
@@ -108,6 +112,9 @@ for (let i = 1; i < colors.length; i++) {
 }
 for (let i = 1; i < weather.length; i++) {
     wordsets.push(['weather', weather[i]])
+}
+for (let i = 1; i < profession.length; i++) {
+    wordsets.push(['profession', profession[i]])
 }
 class Room extends React.Component {
     constructor(props) {
