@@ -1,5 +1,5 @@
 # who's the liar? 🤥
-# Firebase, React
+### Firebase, React
 Play this simple web-based game with your friends!
 
 ### About & Acknowledgements
