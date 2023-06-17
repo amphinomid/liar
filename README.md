@@ -1,6 +1,6 @@
 # who's the liar? 🤥
 ### Firebase, React
-#### Update: life has gotten busy and I no longer have the bandwidth to maintain this project, so it's no longer accepting contributions. Thanks to everyone who contributed while it was active, and feel free to fork it and make it your own :) Thanks also to everyone who played (the more than 10K games!) — I hope it was a source of fun.
+#### Update: life has gotten busy and I no longer have the bandwidth to maintain this project, so it's no longer accepting contributions (and the web app is no longer up). Thanks to everyone who contributed while it was active, and feel free to fork it and make it your own :) Thanks also to everyone who played (the more than 10K games!) — I hope it was a source of fun.
 Play this simple web-based game with your friends!
 
 What it looked like:
