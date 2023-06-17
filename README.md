@@ -1,6 +1,14 @@
 # who's the liar? 🤥
 ### Firebase, React
+#### Update: life has gotten busy and I no longer have the bandwidth to maintain this project, so it's no longer accepting contributions. Thanks to everyone who contributed while it was active, and feel free to fork it and make it your own :)
 Play this simple web-based game with your friends!
+
+What it looked like:
+![homepage](ss0.png)
+![created game](ss1.png)
+![started game](ss2.png)
+![started game, liar's view](ss3.png)
+![ended game](ss4.png)
 
 ### About & Acknowledgements
 I didn't invent this game! I decided to make this after seeing a [video](https://youtu.be/5MS3iaNmKQE?t=401) of a Kpop group playing it. It's built with [Firebase](https://firebase.google.com/docs) and [React](https://create-react-app.dev) (I wasn't super familiar, so I followed a [few](https://css-tricks.com/intro-firebase-react/) [really](https://www.developintelligence.com/blog/2017/04/building-a-realtime-chess-game-with-react-and-firebase/) [nice](https://medium.com/@hasangi/writing-deleting-and-updating-data-in-firebase-realtime-database-with-javascript-f26113ec8c93) [tutorials](https://css-tricks.com/building-a-real-time-chat-app-with-react-and-firebase/)). Styling for buttons was done using [thesephist](https://github.com/thesephist)'s [blocks.css](https://github.com/thesephist/blocks.css), and game IDs were generated with [node-randomstring](https://www.npmjs.com/package/randomstring). Usernames are the only player-specific data stored in the database. I did not enable Firebase's Google Analytics for this project.
