@@ -44,6 +44,7 @@ const flowers = ['Daisy','Rose','Iris','Narcissus','Orchid','Tulip','Sunflower',
 const sports = ['basketball', 'volleyball', 'badminton', 'hockey', 'ice skating', 'tennis', 'cycling', 'surfing', 'fencing', 'boxing', 'soccer', 'cricket', 'table tennis', 'rowing', 'snowboarding', 'baseball', 'bowling', 'skateboarding', 'figure skating', 'golf', 'canoeing', 'horse racing', 'archery', 'gymnastics', 'handball', 'ice hockey', 'bodybuilding', 'recreational fishing', 'karate', 'field hockey', 'lacrosse', 'softball', 'bobsleigh', 'judo', 'rafting', 'artistic swimming', 'olympic weightlifting', 'rhythmic gymnastics', 'racquetball', 'sailing', 'cheerleading', 'football', 'dodgeball', 'pole vault', 'darts', 'croquet', 'polo', 'shot put', 'taekwando', 'wrestling', 'rubgy']
 const colors = ['red', 'yellow', 'blue', 'brown', 'orange', 'green', 'violet', 'black','grey','navy blue', 'carnation pink', 'yellow orange', 'blue green', 'red violet', 'red orange', 'yellow green', 'blue violet', 'white', 'violet red', 'dandelion', 'cerulean', 'apricot', 'scarlet', 'green yellow', 'indigo','gray']
 const weather =['sunny', 'clear','cloudy','overcast','rain','drizzle','hail','humid','snow','thunderstorm','tornado','hurricane','fog','sandstorm']
+const disney_movies = ['Snow White and the Seven Dwarfs','Cinderella','Sleeping Beauty','Beauty and the Beast','The Little Mermaid','Aladdin','The Lion King','Pocahontas','Mulan','The Princess and the Frog','Tangled','Brave','Frozen','Moana','Coco','Zootopia','Finding Nemo','Toy Story','The Incredibles','Up']
 for (let i = 0; i < food.length; i++) {
     wordsets.push(['food', food[i]])
 }
@@ -106,6 +107,9 @@ for (let i = 1; i < colors.length; i++) {
 }
 for (let i = 1; i < weather.length; i++) {
     wordsets.push(['weather', weather[i]])
+}
+for (let i = 1; i < disney_movies.length; i++) {
+    wordsets.push(['disney movies', disney_movies[i]])
 }
 class Room extends React.Component {
     constructor(props) {
