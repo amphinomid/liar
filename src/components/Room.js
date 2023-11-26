@@ -24,7 +24,7 @@ const anatomy = ['brain', 'head', 'face', 'hair', 'eyebrows', 'eyelashes', 'eyes
 const bug = ['caterpillar', 'butterfly', 'moth', 'cockroach', 'spider', 'ant', 'centipede', 'millipede', 'ladybug', 'grasshopper',
     'bee', 'wasp', 'hornet', 'fly', 'fruit fly', 'segfault','beetle']
 const feeling = ['happy', 'sad', 'angry', 'tired', 'sleepy', 'hungry', 'annoyed', 'scared', 'disgusted', 'surprised', 'shocked', 'bored',
-    'horrified', 'relieved', 'satisfied', 'confused', 'nervous']
+    'horrified', 'relieved', 'satisfied', 'confused', 'nervous', 'envy']
 const kitchen = ['cutting board', 'spoon', 'fork', 'knife', 'chopsticks', 'can opener', 'measuring cup', 'cup', 'glass', 'bowl', 'plate',
     'pan', 'colander', 'spatula', 'whisk', 'blender', 'jar', 'rice cooker', 'toaster', 'toaster oven', 'stove']
 const school_subject = ['math', 'science', 'social studies', 'language arts', 'biology', 'chemistry', 'physics', 'earth science', 'computer science',
