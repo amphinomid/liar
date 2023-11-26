@@ -9,12 +9,12 @@ const food = ['apple', 'mango', 'banana', 'pear', 'orange', 'lemon', 'peach', 'p
     'grapes', 'bread', 'bun', 'rice', 'spaghetti', 'noodles', 'egg', 'fish', 'steak', 'pork', 'chicken', 'cabbage', 'broccoli',
     'lettuce', 'spinach', 'celery', 'carrot', 'tomato', 'potato', 'onion', 'okra', 'garlic', 'ginger', 'cilantro', 'bell pepper',
     'eggplant', 'bok choy', 'brussel sprouts', 'cucumber', 'zucchini', 'squash', 'maize', 'corn', 'chocolate', 'lollipop', 'gum',
-    'pomegranate', 'burger', 'donut', 'pizza', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster', 'tofu', 'sushi', 'bacon', 'soup' ]
+    'pomegranate', 'burger', 'donut', 'pizza', 'yogurt', 'cake', 'mutton', 'oyster', 'crab', 'shrimp', 'lobster', 'tofu', 'sushi', 'bacon', 'soup', 'ice cream', 'cookies', 'brownies', 'pie' ]
 const drink = ['water', 'milk', 'soda', 'lemonade', 'beer', 'wine', 'juice', 'cider', 'ayran']
 const wear = ['hat', 'baseball cap', 'glasses', 'sunglasses', 'scarf', 'T-shirt', 'sweater', 'sweatshirt', 'hoodie', 'jacket', 'coat',
     'cardigan', 'shorts', 'pants', 'jeans', 'skirt', 'dress', 'gloves', 'mittens', 'socks', 'shoes', 'slippers']
 const transportation = ['walking', 'bike', 'car', 'subway', 'train', 'plane', 'horse', 'skateboard', 'rollerskates', 'road', 'sidewalk',
-    'bridge', 'railroad', 'bike lane', 'highway', 'boat', 'ferry', 'ship', 'scooter', 'bicycle', 'helicopter', 'rickshaw', 'truck', 'steamer', 'tuktuk']
+    'bridge', 'railroad', 'bike lane', 'highway', 'boat', 'ferry', 'ship', 'scooter', 'bicycle', 'helicopter', 'rickshaw', 'truck', 'steamer', 'tuktuk', 'yacht', 'bus']
 const place = ['home', 'grocery store', 'convenience store', 'market', 'school', 'college', 'university', 'library', 'hospital', 'subway station', 'train station', 'airport', 'work', 'restaurant',
     'park', 'forest', 'desert', 'mountain', 'river', 'sauna', 'salon', 'beach', 'karoke room', 'photo booth', 'museum', 'temple', 'garden', 'stadium','music store']
 const anatomy = ['brain', 'head', 'face', 'hair', 'eyebrows', 'eyelashes', 'eyes', 'nose', 'lips', 'teeth', 'tongue', 'ears', 'chin',
@@ -24,9 +24,9 @@ const anatomy = ['brain', 'head', 'face', 'hair', 'eyebrows', 'eyelashes', 'eyes
 const bug = ['caterpillar', 'butterfly', 'moth', 'cockroach', 'spider', 'ant', 'centipede', 'millipede', 'ladybug', 'grasshopper',
     'bee', 'wasp', 'hornet', 'fly', 'fruit fly', 'segfault','beetle']
 const feeling = ['happy', 'sad', 'angry', 'tired', 'sleepy', 'hungry', 'annoyed', 'scared', 'disgusted', 'surprised', 'shocked', 'bored',
-    'horrified', 'relieved', 'satisfied', 'confused', 'nervous']
+    'horrified', 'relieved', 'satisfied', 'confused', 'nervous', 'envy']
 const kitchen = ['cutting board', 'spoon', 'fork', 'knife', 'chopsticks', 'can opener', 'measuring cup', 'cup', 'glass', 'bowl', 'plate',
-    'pan', 'colander', 'spatula', 'whisk', 'blender', 'jar', 'rice cooker', 'toaster', 'toaster oven', 'stove']
+    'pan', 'colander', 'spatula', 'whisk', 'blender', 'jar', 'rice cooker', 'toaster', 'toaster oven', 'stove', 'microwave']
 const school_subject = ['math', 'science', 'social studies', 'language arts', 'biology', 'chemistry', 'physics', 'earth science', 'computer science',
     'history', 'literature', 'government', 'music', 'art', 'art history', 'algebra', 'geometry', 'trigonometry', 'calculus', 'health', 'law']
 const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'bear', 'deer', 'elk', 'moose', 'bird', 'monkey', 'snake', 'lizard',
@@ -34,7 +34,7 @@ const animal = ['dog', 'wolf', 'cat', 'lion', 'tiger', 'leopard', 'cheetah', 'be
     'shrimp', 'plankton', 'eel', 'stingray', 'giraffe', 'elephant', 'squirrel', 'chipmunk', 'hedgehog', 'porcupine', 'cow', 'pig', 'chicken',
     'sheep', 'kangaroo', 'fox', 'panda', 'mouse', 'rat', 'zebra', 'rhinoceros', 'rabbit', 'eagle', 'frog', 'skunk', 'hippopotamus', 'goat', 'duck', 'horse', 'red panda']
 const around_the_house = ['bathroom', 'bedroom', 'kitchen', 'living room', 'basement', 'sunroom']
-const outdoors = []
+const outdoors = ['river', 'ocean', 'lake']
 const hobby = ['aquascaping', 'acroyoga', 'blogging', 'interior decorating', 'photography', 'diy', 'crocheting', 'lego', 'building', 'lock picking',
                'homebrewing', 'glassblowing', 'cheesemaking', 'candle making', 'weaving', 'storytelling', 'soapmaking', 'juggling',
                'fingerpainting', 'drawing', 'writing poetry', 'baking', 'metalworking', 'thrifting', 'snowboarding', 'camping', 'painting', 'hiking', 'cooking', 'golfing', 'surfing', 'snorkeling', 'dancing', 'gymnastics', 'yoga', 'ballet']
